@@ -8,10 +8,12 @@ const montserrat = Montserrat({
 
 export default function Navbar() {
   return (
+    <header className="w-full relative top-0 z-50 px-26.5 py-0">
     
-    <nav className="w-full max-w-5x1 max-auto bg-white sticky top-0 z-50 border-b border-gray-200">
+    <nav className="w-full max-w-5xl mx-auto flex items-center justify-between px-6 bg-white border-b border-gray-200 shadow-sm">
+
       
-      <div className="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
+      <div className="w-full max-w-5xl mx-auto h-[65px] flex items-center justify-between px-6">
         
         <h1 className={`${montserrat.className} text-[24px] leading-[31.2px] font-bold text-[#00180C]`}>
           Tilth Africa
@@ -36,7 +38,7 @@ export default function Navbar() {
           <button className="text-sm font-medium text-[#00180C] hover:text-[#506600] transition-colors">
             Login
           </button>
-          <button className="px-6 py-2 bg-[#CCFF00] text-[#00180C] font-semibold rounded-lg hover:bg-[#b8e600] transition-colors">
+          <button className="px-6 py-2 bg-[#CCFF00] text-[#00180C] font-semibold rounded-1g hover:bg-[#b8e600] transition-colors">
             Get the App
           </button>
         </div>
@@ -48,5 +50,6 @@ export default function Navbar() {
         </button>
       </div>
     </nav>
+    </header>
   );
 }

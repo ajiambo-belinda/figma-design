@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section 
       
-      className="relative flex flex-row w-full max-w-5xl min-h-[800px] mt-0 py-20 bg-[#00180C] mx-auto overflow-hidden rounded-xl"
+      className="relative flex flex-row w-full max-w-5xl min-h-[800px] mt-0 py-20 bg-[#00180C] mx-auto overflow-hidden"
     >
       <Image
         src="/image.png"
