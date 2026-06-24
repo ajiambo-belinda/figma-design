@@ -1,4 +1,4 @@
-import { Montserrat } from "next/font/google";
+import { Montserrat, } from "next/font/google";
 import Link from "next/link";
 
 const montserrat = Montserrat({

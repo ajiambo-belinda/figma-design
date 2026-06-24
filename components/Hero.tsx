@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Montserrat } from "next/font/google";
-
+import { Montserrat, inter } from "next/font/google";
+import { Button } from "@/components/ui/button";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -9,31 +9,44 @@ const montserrat = Montserrat({
 
 export default function Hero() {
   return (
-    <section 
+    <section className="relative w-full h-[921px] overflow-hidden">
       
-      className="relative flex flex-row w-full min-h-150 mt-0 py-20 bg-[#00180C] mx-auto overflow-hidden"
-    >
       <Image
         src="/image.png"
         alt="Tea Plantation"
         fill
         priority
-        
-        className="object-cover opacity-40"
+        className="object-cover"
       />
 
-      <div className="relative z-10 w-full h-[600px] px-12 flex flex-row items-center gap-12">
-        <div className="w-[512px] h-[536.4px] gap-30.8pxflex flex-col w-full max-w-[450px] justify-center">
+      
+      <div className="absolute inset-0 bg-gradient-to-r from-[#00180C] via-[#00180C]/70 to-[#00180C]/10 z-[1]" />
 
-          <div className="w-full h-auto flex items-center">
-            <h1 className={`${montserrat.className} text-[64px] leading-[80px] tracking-[-1.28px] font-bold text-white`}>
-              Empowering Farmers with the Eyes of Ai
-            </h1>
+      
+      <div className="relative z-10 flex items-center h-full max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[512px] flex flex-col gap-8">
+          <h1
+            className={`${montserrat.className} text-[60px] leading-[80px] tracking-[-1.28px] text-white`}
+          >
+            Empowering Farmers with the {""}
+            <span className="text-[#C3F400]">Eyes of AI</span>
+          </h1>
+
+          <p className="text-[#C8EBD4] text-lg leading-8">
+            Turn your smartphone into a precision.
+            Identify pests, monitor soil health, and optimize
+            yields with real-time Ai computer vision build for 
+            African soil.
+          </p>
+          <div className="flex flex-col gap-4 pt-[17.2px]">
+            <Button className="w-[255.16px] h-[56px] rounded-full bg-[#C3F400] text-[#00180C] hover:bg-[#b5e300]">
+              Download on App Store
+              <div className="flex w-4 h-4 text-[#161E00]"></div>
+            </Button>
           </div>
           </div>
       </div>
     </section>
   );
 }
-
 
