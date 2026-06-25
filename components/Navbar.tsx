@@ -45,7 +45,7 @@ export default function Navbar() {
           <button className="text-sm font-medium text-[#00180C] transition-colors hover:text-[#506600]">
             Login
           </button>
-          <button className="rounded-lg bg-[#CCFF00] px-6 py-2 font-semibold text-[#00180C] transition-colors hover:bg-[#b8e600]">
+          <button className="rounded-full bg-[#CCFF00] px-6 py-2 font-semibold text-[#00180C] transition-colors hover:bg-[#b8e600]">
             Get the App
           </button>
         </div>

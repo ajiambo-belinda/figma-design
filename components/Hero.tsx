@@ -1,10 +1,15 @@
 import Image from "next/image";
-import { Montserrat, inter } from "next/font/google";
+import { Montserrat, Inter } from "next/font/google";
 import { Button } from "@/components/ui/button";
+import { Grid } from "lucide-react";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["700"],
+});
+
+const inter = Inter({
+  subsets: ["latin"],
 });
 
 export default function Hero() {
@@ -35,15 +40,19 @@ export default function Hero() {
           <p className="text-[#C8EBD4] text-lg leading-8">
             Turn your smartphone into a precision.
             Identify pests, monitor soil health, and optimize
-            yields with real-time Ai computer vision build for 
+            yields with real-time AI computer vision build for 
             African soil.
           </p>
           <div className="flex flex-col gap-4 pt-[17.2px]">
-            <Button className="w-[255.16px] h-[56px] rounded-full bg-[#C3F400] text-[#00180C] hover:bg-[#b5e300]">
-              Download on App Store
-              <div className="flex w-4 h-4 text-[#161E00]"></div>
-            </Button>
-          </div>
+  <Button className="w-[255.16px] h-[56px] rounded-full bg-[#C3F400] text-[#00180C] hover:bg-[#b5e300] flex items-center gap-2">
+    <div className="flex w-4 h-4 text-[#161E00]">
+      <Grid />
+    </div>
+    Download on App Store
+  </Button>
+
+  <Button></Button>
+</div>
           </div>
       </div>
     </section>
