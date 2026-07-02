@@ -3,6 +3,7 @@ import { Montserrat, Inter } from "next/font/google";
 import { Button } from "@/components/ui/button";
 import { Grid, BookMarked } from "lucide-react";
 
+
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "700"], 
@@ -38,7 +39,7 @@ export default function Hero() {
           </h1>
 
           
-          <p className="text-[#C8EBD4] text-lg leading-8">
+          <p className=" text-[#C8EBD4] text-sm leading-6">
             Turn your smartphone into a precision tool. Identify pests, 
             monitor soil health, and optimize yields with real-time AI 
             computer vision built for African soil.
@@ -72,8 +73,27 @@ export default function Hero() {
 
           </div>
         </div>
-      </div>
-    </section>
+        {/* AIVisionMock*/}
+        <div className="relative w-[552px] h-[675.55px]">
+          {/* floating data chips*/}
+         <div className="absolute top-[12px] right-[-40px] w-[219.39px] h-[74px] rounded-[16px] border border-[rgba(195,244,0,0.3)] bg-[rgba(255,255,255,0.15)] p-[16px] backdrop-blur-[20px] flex flex-col">
+</div>
+          {/* Background + Boarder + Shadow*/}
+          <div className=" ml-28 w-[320px] h-[659.55px] rounded-[40px] border-[8px] border-[#111C2C] shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)]">
+            {/* UI overlays*/}
+            <div className="w-[304px] h-[659.55px] top-[8px] left-[8px] flex justify-between">
+              <img src="/maize field.png"
+               alt="crop"
+               className="object-cover rounded-[32px]"
+              
+              />
+              
+              </div>
+              </div>
+          </div>
+          
+        </div>
+        </section>
   );
 }
 
