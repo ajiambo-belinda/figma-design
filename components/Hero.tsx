@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Montserrat, Inter } from "next/font/google";
 import { Button } from "@/components/ui/button";
-import { Grid, BookMarked } from "lucide-react";
+import { Grid, BookMarked, UserCog  } from "lucide-react";
 
 
 const montserrat = Montserrat({
@@ -76,8 +76,25 @@ export default function Hero() {
         {/* AIVisionMock*/}
         <div className="relative w-[552px] h-[675.55px]">
           {/* floating data chips*/}
-         <div className="absolute top-[12px] right-[-40px] w-[219.39px] h-[74px] rounded-[16px] border border-[rgba(195,244,0,0.3)] bg-[rgba(255,255,255,0.15)] p-[16px] backdrop-blur-[20px] flex flex-col">
+         <div className="absolute top-[16px] right-[-50px] z-20 w-[220px] h-[74px] rounded-[16px] border border-[#C3F400]/30 bg-white/10 backdrop-blur-[20px] px-4 flex items-center gap-3 shadow-[0px_8px_10px_-6px_rgba(0,0,0,0.1),0px_20px_25px_-5px_rgba(0,0,0,0.1)]">
+  <div className="flex flex row items-center justify-center w-[40px] h-[40px] rounded-8px bg-[#C1F100]/20">
+  <UserCog className="w-[19.01px] h-[20px] text-[#C1F100]" />
+
+  
+    
+  </div>
+
+  <div className=" flex flex-col w-[131.39px h-[74px]">
+    <p className="w-[80.56px] h-4 font-inter font-normal text-[12px] leading-4 tracking-[0px] text-white">
+      AI Confidence
+    </p>
+
+<p className="w-[131.39px] h-6 text-[#C3F400] font-inter text-base leading-6 text-center">
+      98.4% Accuracy
+    </p>
+  </div>
 </div>
+
           {/* Background + Boarder + Shadow*/}
           <div className=" ml-28 w-[320px] h-[659.55px] rounded-[40px] border-[8px] border-[#111C2C] shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)]">
             {/* UI overlays*/}
@@ -90,10 +107,23 @@ export default function Hero() {
               
               </div>
               </div>
-          </div>
-          
-        </div>
-        </section>
+
+{/* Bottom floating chip */}
+<div className="absolute bottom-[10px] left-[140px] z-18 w-[260px] h-[88px] rounded-[22px] border border-white/20 bg-white/10 backdrop-blur-[24px] shadow-[0px_8px_10px_-6px_rgba(0,0,0,0.15),0px_20px_25px_-5px_rgba(0,0,0,0.15)] px-8 py-4">
+  <p className="text-[#C3F400] text-[9px] font-semibold uppercase">
+    Identified Crop
+  </p>
+
+  <p className="mt-1 text-white text-[22px] font-semibold leading-none">
+  Zea mays <span className="text-white/70 text-sm">(Maize)</span>
+</p>
+</div>
+              </div>
+              
+
+</div>
+      
+      
+    </section>
   );
 }
-
