@@ -1,4 +1,7 @@
 
+import Cards from "@/components/Cards";
+
+
 
 
 export default function Capabilities() {
@@ -15,6 +18,7 @@ export default function Capabilities() {
                 Tilth Africa combines satelight telemetry with local computer vision to give you a complete picture of your farm's health.
             </p>
         </div>
+        <Cards />
     </div>
 </section>
     )
