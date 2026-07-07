@@ -1,4 +1,4 @@
-import { Leaf, TriangleAlert } from "lucide-react";
+import { Leaf, TriangleAlert, Layers2 } from "lucide-react";
 
 export default function Cards() {
   return (
@@ -73,7 +73,7 @@ export default function Cards() {
   {/* Content */}
   <div className="absolute z-20 flex flex-col w-[360.67px] h-[253px] top-[196px] left-[1px] p-[32px]">
     <div className="w-[296.97px] h-[169px] rounded-[16px] p-[24px] gap-[8px] border border-white/15 ring-1 ring-[#BA1A1A]/20 bg-white/15 backdrop-blur-[20px] flex flex-col">
-      <Leaf className="w-[17px] h-[17px] text-[#C3F400]" />
+      <Layers2 className="w-[18px] h-[19.05px] text-[#C3F400]" />
       <h3 className="font-montserrat font-bold leading-[24px] text-white text-[16px]">
         Soil health
       </h3>
