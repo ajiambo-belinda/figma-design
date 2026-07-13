@@ -1,4 +1,4 @@
-import { Video } from "lucide-react";
+import { Video, Heading, Globe, BadgeCheck } from "lucide-react";
 
 export default function AIShowcaseSection() {
   return (
@@ -28,9 +28,12 @@ export default function AIShowcaseSection() {
           </div>
         </div>
 
-        {/* Min Video player*/}
+        
         <div className="grid grid-cols-3 w-[1152px] h-[432px] gap-x-[48px] gap-y-[48px]">
-          <div className="grid grid-cols-3 grid-rows-2 gap-x-2 gap-y-2 w-[752px] h-[432px] pb-[9px]">
+
+          {/* Min Video player*/}
+          <div className="col-start-1 col-span-2 w-[752px] h-[432px] pb-[9px]">
+
             {/* Overlay + Border + Shadow*/}
             <div className="relative w-[752px] h-[423px] rounded-[36px] overflow-hidden border border-[#FFFFFF]/10 bg-[#FFFFFF]/20 shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)]">
               <img
@@ -75,14 +78,112 @@ export default function AIShowcaseSection() {
                     MAIZE: 98% CONFIDENCE
                   </h3>
                 </div>
+                <button className="absolute top-[58px] left-[96px] w-[80px] h-[80px] rounded-full bg-[#C3F400] shadow-[0px_25px_50px_0px_rgba(0,0,0,0.25)] flex items-center justify-center z-30">
+    <div className="w-0 h-0 border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent border-l-[18px] border-l-[#161E00] ml-[4px]" />
+  </button>
+</div>
               </div>
 
               {/* Scanning line */}
-              <div className="absolute top-0 left-0 w-[750px] h-[4px] bg-[#C3F400] shadow-[0px_0px_40px_10px_#C3F400] z-20"></div>
-            </div>
-          </div>
+              
+
+              
+              </div>
+
+              {/* Capabilities clips grid */}
+
+              <div className="flex flex-col w-[352px] h-[432px] gap-[24px]">
+                <div className="w-[352px] h-[128px] rounded-[16px] border border-white/10 bg-white/5">
+                <div className="flex flex-row w-[350px] h-[126px]">
+                  <div className="flex flex-col w-[116.66px] h-[126px]">
+                    <img src="/leaf.png" 
+                    alt="" 
+                    className="w-[116.66px] h-[126px] bg-[#FFFFFF]"
+                    />
+                    <div className="absolute left-0 top-0 w-[116.66px] h-[126px] bg-[#BA1A1A]/20 mix-blend-overlay rounded-l-[16px]"></div>
+                    </div>
+                    <div className="flex flex-col w-[233.33px] h-[126px] p-[16px]">
+                      <div className="flex flex-col w-[201.33px] h-[19px] pb-[19px]">
+                        <div className="flex flex-col w-[201.33px] h-[15px]">
+                          <h1 className="w-[201.33px] h-[15px] font-inter font-bold text-[10px] leading-[15px] tracking-[0px] text-[#C3F400]">PATHOGEN SCAN</h1>
+                        </div>
+                        <div className="flex flex-col w-[201.33px] h-[24px] pb-[4px]">
+                          <div className="flex flex-col w-[201.33px] h-[20px]">
+                            <p className="w-[201.33px] h-[20px] font-inter font-bold text-[14px] leading-[20px] tracking-[0px] text-[#ffffff]">Real-time Blight Detection</p>
+                          </div>
+                          <div className="flex flex row w-[201.33px] h-[15px] gap-[3.99px]">
+                            
+                              <BadgeCheck className="w-[11px] h-[10.5px] text-[#ACCFB8]" />
+                              <h2 className="w-[92.5px] h-[15px] font-inter font-bold text-[10px] leading-[15px] tracking-[0px] text-[#ACCFB8]">Verified by iSDA soil</h2>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    
+                </div>
+                <div className="flex flex-col w-[352px] h-[128px] rounded-[16px] border border-white/10 bg-white/5">
+  <div className="flex flex-row w-[350px] h-[126px]">
+    <div className="relative flex flex-col w-[116.66px] h-[126px]">
+      <img 
+        src="/soil.png" 
+        alt=""
+        className="w-[116.66px] h-[126px] object-cover rounded-l-[16px] bg-white"
+      />
+      <div className="absolute left-0 top-0 w-[116.66px] h-[126px] bg-[#c3f400]/20 mix-blend-overlay rounded-l-[16px]"></div>
+    </div>
+    <div className="flex flex-col w-[233.33px] h-[126px] p-[16px]">
+      <div className="w-[201.33px] h-[19px] pb-[4px] flex flex-col">
+        <div className="flex flex-col w-[201.33px] h-[15px]">
+          <h1 className="w-[201.33px] h-[15px] font-inter font-bold text-[10px] leading-[15px] tracking-[0px] text-white">
+            SOIL ANALYSIS
+          </h1>
         </div>
       </div>
+      <div className="flex flex-col w-[201.33px] h-[24px] pb-[4px]">
+        <div className="flex flex-col w-[201.33px] h-[20px]">
+          <h2 className="w-[201.33px] h-[20px] font-inter font-bold text-[14px] leading-[20px] tracking-[0px] text-[#C3F400]">AR Moisture Mapping</h2>
+        </div>
+      </div>
+      <div className="flex flex-row w-[201.33px] h-[15px] gap-[3.99px]">
+        
+          <Globe className="w-[10px] h-[10px] text-[#ACCFB8]"/>
+          <h3 className=" whitespace-nowrap flex flex-col w-[120.42px] h-[15px] font-inter font-bold text-[10px] leading-[15px] tracking-[0px] text-[#ACCFB8]">NASA POWER Intergration</h3>
+        
+      </div>
+    </div>
+  </div>
+</div>
+                <div className="flex flex-col w-[352px] h-[128px] rounded-[16px] border border-white/10 bg-white/5">
+                <div className="flex flex-row w-[350px] h-[126px]">
+                  <div className="relative w-[116.66px] h-[126px] overflow-hidden">
+                    <img src="/field.png" 
+                    alt="" 
+                     className="w-[full] h-[full] bg-[#ffffff] object-cover" />
+                  </div>
+                  <div className="flex flex-col w-[233.33px] h-[126px] p-[16px]"> 
+                    <div className="flex flex-col w-[201.33px] h-[19px] pb-[4px]">
+                      <div className="flex flex-col w-[201.33px] h-[15px] ">
+                        <h1 className="w-[201.33px] h-[15px] font-inter font-bold text-[10px] leading-[15px] tracking-[0px] text-[#C3F400]">CROP IDENTIFICATION</h1>
+                      </div>
+                    </div>
+                    <div className="w-[201.33px] h-[24px] pb-[4px]">
+                      <div className="w-[201.33px] h-[20px]">
+                        <h2 className="w-[201.33px] h-[20px] font-inter font-bold text-[14px] leading-[20px] tracking-[0px] text-[#ffffff]">PANORAMIC VARIETY SCAN</h2>
+                      </div>
+                    </div>
+                    <div className="flex flex-row w-[201.33px] h-[15px] gap-[3.99px]">
+                      <BadgeCheck className="w-[11px] h-[10.6px] text-[#ACCFB8]"/>
+                      <h3 className="w-[92.5px] h-[15px] font-inter font-normal text-[10px] leading-[15px] tracking-[0px] text-[#ACCFB8] text-white">Verified by iSDAsoil</h3>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      
     </section>
   );
 }
